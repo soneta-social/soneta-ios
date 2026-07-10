@@ -129,24 +129,24 @@ public func dictFromLocalization(_ value: Localization) -> [String: String] {
     for entry in value.entries {
         switch entry {
             case let .string(key, value):
-                dict[key] = value
+                dict[key] = value.replacingOccurrences(of: "Telegram", with: "Soneta")
             case let .pluralizedString(key, zero, one, two, few, many, other):
                 if let zero = zero {
-                    dict["\(key)_zero"] = zero
+                    dict["\(key)_zero"] = zero.replacingOccurrences(of: "Telegram", with: "Soneta")
                 }
                 if let one = one {
-                    dict["\(key)_1"] = one
+                    dict["\(key)_1"] = one.replacingOccurrences(of: "Telegram", with: "Soneta")
                 }
                 if let two = two {
-                    dict["\(key)_2"] = two
+                    dict["\(key)_2"] = two.replacingOccurrences(of: "Telegram", with: "Soneta")
                 }
                 if let few = few {
-                    dict["\(key)_3_10"] = few
+                    dict["\(key)_3_10"] = few.replacingOccurrences(of: "Telegram", with: "Soneta")
                 }
                 if let many = many {
-                    dict["\(key)_many"] = many
+                    dict["\(key)_many"] = many.replacingOccurrences(of: "Telegram", with: "Soneta")
                 }
-                dict["\(key)_any"] = other
+                dict["\(key)_any"] = other.replacingOccurrences(of: "Telegram", with: "Soneta")
         }
     }
     return dict

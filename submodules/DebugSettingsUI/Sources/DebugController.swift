@@ -376,7 +376,7 @@ private enum DebugControllerEntry: ItemListNodeEntry {
 
                         let composeController = MFMailComposeViewController()
                         composeController.mailComposeDelegate = arguments.mailComposeDelegate
-                        composeController.setSubject("Telegram Logs")
+                        composeController.setSubject("Soneta Logs")
                         for (name, path) in logs {
                             if let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe) {
                                 composeController.addAttachmentData(data, mimeType: "application/text", fileName: name)
@@ -457,7 +457,7 @@ private enum DebugControllerEntry: ItemListNodeEntry {
                             
                             let composeController = MFMailComposeViewController()
                             composeController.mailComposeDelegate = arguments.mailComposeDelegate
-                            composeController.setSubject("Telegram Logs")
+                            composeController.setSubject("Soneta Logs")
                             for (name, path) in logs {
                                 if let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe) {
                                     composeController.addAttachmentData(data, mimeType: "application/text", fileName: name)
@@ -542,7 +542,7 @@ private enum DebugControllerEntry: ItemListNodeEntry {
 
                         let composeController = MFMailComposeViewController()
                         composeController.mailComposeDelegate = arguments.mailComposeDelegate
-                        composeController.setSubject("Telegram Logs")
+                        composeController.setSubject("Soneta Logs")
                         for (name, path) in logs {
                             if let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe) {
                                 composeController.addAttachmentData(data, mimeType: "application/text", fileName: name)
@@ -626,7 +626,7 @@ private enum DebugControllerEntry: ItemListNodeEntry {
 
                         let composeController = MFMailComposeViewController()
                         composeController.mailComposeDelegate = arguments.mailComposeDelegate
-                        composeController.setSubject("Telegram Logs")
+                        composeController.setSubject("Soneta Logs")
                         for (name, path) in logs {
                             if let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe) {
                                 composeController.addAttachmentData(data, mimeType: "application/text", fileName: name)
@@ -711,7 +711,7 @@ private enum DebugControllerEntry: ItemListNodeEntry {
 
                         let composeController = MFMailComposeViewController()
                         composeController.mailComposeDelegate = arguments.mailComposeDelegate
-                        composeController.setSubject("Telegram Logs")
+                        composeController.setSubject("Soneta Logs")
                         for (name, path) in logs {
                             if let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe) {
                                 composeController.addAttachmentData(data, mimeType: "application/text", fileName: name)
@@ -765,7 +765,7 @@ private enum DebugControllerEntry: ItemListNodeEntry {
                             
                             let composeController = MFMailComposeViewController()
                             composeController.mailComposeDelegate = arguments.mailComposeDelegate
-                            composeController.setSubject("Telegram Logs")
+                            composeController.setSubject("Soneta Logs")
                             for (name, path) in logs {
                                 if let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe) {
                                     composeController.addAttachmentData(data, mimeType: "application/text", fileName: name)
